@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  overflow-x: hidden;
+  color: var(--color-text);
+  background-color: var(--color-background-light);
+}
+
+:root {
+  --color-red: #db0000;
+  --color-red-disabled: #831010;
+  --color-background: #000;
+  --color-background-light: #161616;
+  --color-text: #fff;
+}
+
+.mySwiper {
+  overflow: visible !important;
+}
