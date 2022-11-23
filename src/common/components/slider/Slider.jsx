@@ -1,6 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { CardContainer } from "../../../common/styled-components/CardContainer";
+import Card from "./components/Card";
 import { swiperProps } from "./config/props";
 
 const Slider = ({ entities }) => {
@@ -9,7 +9,7 @@ const Slider = ({ entities }) => {
       {entities.map((entity) => {
         return (
           <SwiperSlide key={entity.id}>
-            <CardContainer image={entity.backdrop}></CardContainer>
+            <Card entity={entity} />
           </SwiperSlide>
         );
       })}

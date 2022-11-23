@@ -1,12 +1,8 @@
 import React from "react";
-import Movies from "./features/movies/pages/Movies";
+import AppRoutes from "./routes/App.routes";
 
 const App = () => {
-  return (
-    <div>
-      <Movies />
-    </div>
-  );
+  return <AppRoutes />;
 };
 
 export default App;

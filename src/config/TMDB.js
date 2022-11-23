@@ -13,10 +13,12 @@ export const TMDB = {
     movies: {
       popular: "/movie/popular",
       top_rated: "/movie/top_rated",
+      details: "/movie/",
     },
     series: {
       popular: "/tv/popular",
       top_rated: "/tv/top_rated",
+      details: "/tv/",
     },
   },
   images: {
