@@ -1,12 +1,15 @@
-import React from "react";
-import Banner from "../../../common/components/banner/Banner";
-import useFetch from "../../../common/hooks/useFetch";
-import { getPopularMovies } from "../services/getPopular";
-import Slider from "../../../common/components/slider/Slider";
-import Title from "../../../common/components/title/Title";
-import { CONSTANTS } from "../../../utils/constants";
+import React from 'react';
+import Banner from '../../../common/components/banner/Banner';
+import useFetch from '../../../common/hooks/useFetch';
+import { getPopularMovies } from '../services/getPopular';
+import Slider from '../../../common/components/slider/Slider';
+import Title from '../../../common/components/title/Title';
+import { CONSTANTS } from '../../../utils/constants';
+import { useAuth } from '../../../auth/context/AuthProvider';
 
 const Movies = () => {
+  const { state, dispatch } = useAuth();
+
   const {
     data: movies1,
     error: error1,
